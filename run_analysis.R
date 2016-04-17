@@ -64,11 +64,6 @@ getTidyData <- function(dataDirectory) {
 }
 
 
-TidyData <- function(dataDirectory) {
-  tData <- getTidyData(dataDirectory)
-
-  tData
-}
 
 #download and extract zip package from url
 
@@ -80,17 +75,21 @@ if (!file.exists(dataDirectory)) {
   unlink(tempfile)
 }
 
-tData <- TidyData(dataDirectory)
+tData <- getTidyData(dataDirectory)
+
 
 #write first tidy data set
-
-write.table(tData, "tidy.txt")
-
+write.table(tData, "tidy.txt",row.names = F)
 
 tData2 <- tData[,seq(3, length(names(tData)))]
 
-newData = by(tData2,paste(tData$subject, tData$activity, sep="_"), FUN=colMeans)
-tData2 = do.call(rbind, newData)
+newData = aggregate(tData2,by = list(tData$subject, tData$activity), FUN=mean)
+
+newData = newData[order(newData$Group.1),]
+
+colnames(newData)[colnames(newData)=="Group.1"] <- "subject"
+colnames(newData)[colnames(newData)=="Group.2"] <- "activity"
+
 
 #write second tidy data set
-write.table(tData2, "tidy2.txt")
+write.table(newData, "tidy2.txt",row.names = F)
