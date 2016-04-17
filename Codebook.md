@@ -6,16 +6,16 @@ Codebook
 -----------|-------------
 | subject |  Subject ID
 | activity | The activity performed
-| tbodyaccmean[x//|y//|z] | Mean time for acceleration of body for X direction, Y direction or Z direction
-| tbodyaccstd[x|y|z]  | Standard deviation for acceleration of body for X direction, Y direction or Z direction
-| tgravityaccmean[x|y|z] | Mean time of acceleration of gravity for X direction, Y direction or Z direction
-| tgravityaccstd[x|y|z] | Standard deviation of time of acceleration of gravity for X direction, Y direction or Z direction
-| tbodyaccjerkmean[x|y|z] | Mean time of body acceleration jerk for X direction, Y direction or Z direction
-| tbodyaccjerkstd[x|y|z] | Standard deviation of time of body acceleration jerk for X direction, Y direction or Z direction
-| tbodygyromean[x|y|z] | Mean body gyroscope measurement for X direction, Y direction or Z direction
-| tbodygyrostd[x|y|z] | Standard deviation of body gyroscope measurement for X direction, Y direction or Z direction
-| tbodygyrojerkmean[x|y|z] | Mean jerk signal of body for X direction, Y direction or Z direction
-| tbodygyrojerkstd[x|y|z] | Standard deviation of jerk signal of body for X direction, Y direction or Z direction
+| tbodyaccmean[xyz] | Mean time for acceleration of body for X direction, Y direction or Z direction
+| tbodyaccstd[xyz]  | Standard deviation for acceleration of body for X direction, Y direction or Z direction
+| tgravityaccmean[xyz] | Mean time of acceleration of gravity for X direction, Y direction or Z direction
+| tgravityaccstd[xyz] | Standard deviation of time of acceleration of gravity for X direction, Y direction or Z direction
+| tbodyaccjerkmean[xyz] | Mean time of body acceleration jerk for X direction, Y direction or Z direction
+| tbodyaccjerkstd[xyz] | Standard deviation of time of body acceleration jerk for X direction, Y direction or Z direction
+| tbodygyromean[xyz] | Mean body gyroscope measurement for X direction, Y direction or Z direction
+| tbodygyrostd[xyz] | Standard deviation of body gyroscope measurement for X direction, Y direction or Z direction
+| tbodygyrojerkmean[xyz] | Mean jerk signal of body for X direction, Y direction or Z direction
+| tbodygyrojerkstd[xyz] | Standard deviation of jerk signal of body for X direction, Y direction or Z direction
 | tbodyaccmagmean | Mean magnitude of body Acc
 | tbodyaccmagstd | Standard deviation of magnitude of body Acc
 | tgravityaccmagmean | Mean gravity acceleration magnitude
@@ -26,12 +26,12 @@ Codebook
 | tbodygyromagstd | Standard deviation of magnitude of body gyroscope measurement
 | tbodygyrojerkmagmean | Mean magnitude of body body gyroscope jerk measurement
 | tbodygyrojerkmagstd | Standard deviation of magnitude of body body gyroscope jerk measurement
-| fbodyaccmean[x|y|z] | Mean frequency of body acceleration for X direction, Y direction or Z direction
-| fbodyaccstd[x|y|z] | Standard deviation of frequency of body acceleration for X direction, Y direction or Z direction
-| fbodyaccjerkmean[x|y|z] | Mean frequency of body accerlation jerk for X direction, Y direction or Z direction
-| fbodyaccjerkstd[x|y|z] | Standard deviation frequency of body accerlation jerk for X direction, Y direction or Z direction
-| fbodygyromean[x|y|z] | Mean frequency of body gyroscope measurement for X direction, Y direction or Z direction
-| fbodygyrostd[x|y|z] | Standard deviation frequency of body gyroscope measurement for X direction, Y direction or Z direction
+| fbodyaccmean[xyz] | Mean frequency of body acceleration for X direction, Y direction or Z direction
+| fbodyaccstd[xyz] | Standard deviation of frequency of body acceleration for X direction, Y direction or Z direction
+| fbodyaccjerkmean[xyz] | Mean frequency of body accerlation jerk for X direction, Y direction or Z direction
+| fbodyaccjerkstd[xyz] | Standard deviation frequency of body accerlation jerk for X direction, Y direction or Z direction
+| fbodygyromean[xyz] | Mean frequency of body gyroscope measurement for X direction, Y direction or Z direction
+| fbodygyrostd[xyz] | Standard deviation frequency of body gyroscope measurement for X direction, Y direction or Z direction
 | fbodyaccmagmean | Mean frequency of body acceleration magnitude
 | fbodyaccmagstd | Standard deviation of frequency of body acceleration magnitude
 | fbodybodyaccjerkmagmean | Mean frequency of body acceleration jerk magnitude
