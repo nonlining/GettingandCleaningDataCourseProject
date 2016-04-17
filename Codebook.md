@@ -6,7 +6,7 @@ Codebook
 -----------|-------------
 | subject |  Subject ID
 | activity | The activity performed
-| tbodyaccmean[x|y|z] | Mean time for acceleration of body for X direction, Y direction or Z direction
+| tbodyaccmean[x//|y//|z] | Mean time for acceleration of body for X direction, Y direction or Z direction
 | tbodyaccstd[x|y|z]  | Standard deviation for acceleration of body for X direction, Y direction or Z direction
 | tgravityaccmean[x|y|z] | Mean time of acceleration of gravity for X direction, Y direction or Z direction
 | tgravityaccstd[x|y|z] | Standard deviation of time of acceleration of gravity for X direction, Y direction or Z direction
